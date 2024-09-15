@@ -1,6 +1,6 @@
 <p align="center">
-	<h1 align="center">Pona</h2>
-	<p align="center">Another terminal based text editor written in C++</p>
+	<h1 align="center">Pona ✍️</h2>
+	<p align="center">Another terminal based text editor written in C++ 💻</p>
 </p>
 <p align="center">
 	<a href="./LICENSE">
@@ -16,47 +16,42 @@
 	<img width="600px" src="res/screenshots.png"/>
 </p>
 
-## Table of contents
+## 📋 Table of contents
 * [Introduction](#introduction)
 * [Features](#features)
 * [Bugs](#bugs)
 * [Dependencies](#dependencies)
 * [Make](#make)
 
-## Introduction
-A [C++](https://en.wikipedia.org/wiki/C%2B%2B) [terminal](https://en.wikipedia.org/wiki/Terminal_emulator)
-[text editor](https://en.wikipedia.org/wiki/Text_editor) for [Linux](https://en.wikipedia.org/wiki/Linux).
-Unlike my other editor, [tr-ed](https://github.com/LordOfTrident/trident-editor), this aims to be simpler,
-faster to use and at least a bit more practical. For help on how to use the editor, press Ctrl+H while
-in the editor.
+## 📝 Introduction
+Pona is a [C++](https://en.wikipedia.org/wiki/C%2B%2B)-based [terminal](https://en.wikipedia.org/wiki/Terminal_emulator) [text editor](https://en.wikipedia.org/wiki/Text_editor) designed for [Linux](https://en.wikipedia.org/wiki/Linux). Unlike my previous editor, [tr-ed](https://github.com/LordOfTrident/trident-editor), Pona is focused on simplicity, speed, and practicality. For help using the editor, press Ctrl+H while inside the editor.
 
-## Features
-- [X] Basic text editing
-- [X] Scrolling (horizontal, vertical)
-- [X] Ruler
-- [X] Scrollbar
-- [X] File i/o
-- [X] Tabs
-- [X] Config files
-- [x] Themes
-- [X] Command line
-- [X] Mouse input
-- [X] Selection
-- [X] Copy/cut/paste
-- [X] Find and replace commands
-- [ ] Build and run commands
-- [ ] Syntax highlighting
-- [ ] Lua plugins
+## 🌟 Features
+- [X] Basic text editing 📝
+- [X] Scrolling (horizontal & vertical) 🖱️
+- [X] Ruler 📏
+- [X] Scrollbar 📜
+- [X] File input/output 📂
+- [X] Tabs 🗂️
+- [X] Config files ⚙️
+- [X] Themes 🎨
+- [X] Command line input 🖥️
+- [X] Mouse input 🖱️
+- [X] Text selection ✂️
+- [X] Copy/cut/paste 📋
+- [X] Find and replace 🔍
+- [ ] Build and run commands 🔨 (In Progress)
+- [ ] Syntax highlighting 🎨 (In Progress)
+- [ ] Lua plugins 🧩 (In Progress)
 
-## Bugs
-- If the current line has tabs and you click at the end of the line to position the cursor there,
-  the cursor will be offset to the left by tab size * tabs count
+## 🐞 Bugs
+- Cursor alignment issue: If the current line contains tabs and you click at the end of the line, the cursor will be offset to the left by `tab size * tabs count`.
 
-If you find any bugs, please create an issue and report them.
+If you encounter any other bugs, please report them by opening an issue in the repository.
 
-## Dependencies
-- [ncurses](https://en.wikipedia.org/wiki/Ncurses)
-- [xclip](https://github.com/astrand/xclip)
+## 📦 Dependencies
+- [ncurses](https://en.wikipedia.org/wiki/Ncurses) - for terminal handling
+- [xclip](https://github.com/astrand/xclip) - for clipboard interaction
 
-## Make
-Run `make all` to see all the make rules, `make` to compile a static binary.
+## ⚙️ Make
+To build the project, run `make all` to see all the available make rules, or just `make` to compile a static binary.
